@@ -37,11 +37,16 @@ final class DetailRouter {
 }
 
 extension DetailRouter: DetailRouterProtocol {
+    func popToRootCATransition(animated: Bool, completion: @escaping (() -> ())) {
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completion)
+        view.navigationController?.popViewController(animated: true)
+        CATransaction.commit()
+    }
+
     func popToHomeView() {
         view.navigationController?.popViewController(animated: true)
     }
 
-    func popToHomeViewCATransition() {
-        view.navigationController?.popViewController(animated: true)
-    }
+    func popToHomeViewCATransition() {}
 }

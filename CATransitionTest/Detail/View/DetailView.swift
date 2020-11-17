@@ -13,7 +13,7 @@ class DetailView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.navigationItem.title = "Detail"
     }
 
@@ -22,7 +22,13 @@ class DetailView: UIViewController {
     }
 
     @IBAction private func popToHomeViewCATransition() {
-        self.presenter.popToHomeViewCATransition()
+        self.presenter.popToHomeViewCATransition(animated: true, completion: self.completionBlock)
+    }
+
+    fileprivate func completionBlock() {
+        let alertController = UIAlertController(title: "Pop con CA", message: "Esto se ejecuta en un completion block", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
     }
 }
 

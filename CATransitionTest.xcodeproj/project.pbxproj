@@ -25,6 +25,7 @@
 		67E365902563F2C5006E7886 /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E365872563F2C5006E7886 /* DetailProtocols.swift */; };
 		67E365912563F2C5006E7886 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E365892563F2C5006E7886 /* DetailInteractor.swift */; };
 		67E365922563F2C5006E7886 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3658B2563F2C5006E7886 /* DetailRouter.swift */; };
+		67E365972563F9C4006E7886 /* CustomProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E365962563F9C4006E7886 /* CustomProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		67E365872563F2C5006E7886 /* DetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
 		67E365892563F2C5006E7886 /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		67E3658B2563F2C5006E7886 /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		67E365962563F9C4006E7886 /* CustomProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			children = (
 				67E3653A2563F22F006E7886 /* Assets.xcassets */,
 				67E3653C2563F22F006E7886 /* LaunchScreen.storyboard */,
+				67E365962563F9C4006E7886 /* CustomProtocols.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E365972563F9C4006E7886 /* CustomProtocols.swift in Sources */,
 				67E365652563F25F006E7886 /* HomeModel.swift in Sources */,
 				67E365642563F25F006E7886 /* HomePresenter.swift in Sources */,
 				67E3658C2563F2C5006E7886 /* DetailPresenter.swift in Sources */,

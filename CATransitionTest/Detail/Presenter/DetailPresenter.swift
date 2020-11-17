@@ -21,11 +21,11 @@ final class DetailPresenter {
 }
 
 extension DetailPresenter: DetailPresenterProtocol {
+    func popToHomeViewCATransition(animated: Bool, completion: @escaping () -> ()) {
+        self.router.popToRootCATransition(animated: true, completion: completion)
+    }
+
     func popToHomeView() {
         self.router.popToHomeView()
-    }
-    
-    func popToHomeViewCATransition() {
-        self.router.popToHomeViewCATransition()
     }
 }

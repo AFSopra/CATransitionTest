@@ -14,10 +14,10 @@ protocol DetailInteractorProtocol {}
 
 protocol DetailPresenterProtocol {
     func popToHomeView()
-    func popToHomeViewCATransition()
+    func popToHomeViewCATransition(animated: Bool, completion: @escaping (() -> ()))
 }
 
-protocol DetailRouterProtocol {
+protocol DetailRouterProtocol: CustomNavigation {
     func popToHomeView()
     func popToHomeViewCATransition()
 }
