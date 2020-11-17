@@ -12,6 +12,12 @@ protocol DetailViewProtocol {}
 
 protocol DetailInteractorProtocol {}
 
-protocol DetailPresenterProtocol {}
+protocol DetailPresenterProtocol {
+    func popToHomeView()
+    func popToHomeViewCATransition()
+}
 
-protocol DetailRouterProtocol {}
+protocol DetailRouterProtocol {
+    func popToHomeView()
+    func popToHomeViewCATransition()
+}

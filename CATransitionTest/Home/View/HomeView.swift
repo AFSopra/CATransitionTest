@@ -13,6 +13,12 @@ class HomeView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "Home"
+    }
+
+    @IBAction private func buttonTapped(_ sender: UIButton) {
+        self.presenter.presentDetailView()
     }
 }
 

@@ -20,4 +20,12 @@ final class DetailPresenter {
     }
 }
 
-extension DetailPresenter: DetailPresenterProtocol {}
+extension DetailPresenter: DetailPresenterProtocol {
+    func popToHomeView() {
+        self.router.popToHomeView()
+    }
+    
+    func popToHomeViewCATransition() {
+        self.router.popToHomeViewCATransition()
+    }
+}

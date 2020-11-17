@@ -12,6 +12,10 @@ protocol HomeViewProtocol {}
 
 protocol HomeInteractorProtocol {}
 
-protocol HomePresenterProtocol {}
+protocol HomePresenterProtocol {
+    func presentDetailView()
+}
 
-protocol HomeRouterProtocol {}
+protocol HomeRouterProtocol {
+    func presentDetailView()
+}

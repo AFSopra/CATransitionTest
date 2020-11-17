@@ -13,6 +13,16 @@ class DetailView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "Detail"
+    }
+
+    @IBAction private func popToHomeView() {
+        self.presenter.popToHomeView()
+    }
+
+    @IBAction private func popToHomeViewCATransition() {
+        self.presenter.popToHomeViewCATransition()
     }
 }
 

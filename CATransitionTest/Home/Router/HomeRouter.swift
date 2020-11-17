@@ -36,4 +36,9 @@ final class HomeRouter {
     }
 }
 
-extension HomeRouter: HomeRouterProtocol {}
+extension HomeRouter: HomeRouterProtocol {
+    func presentDetailView() {
+        let screen = DetailRouter.assembleModule()
+        view.navigationController?.pushViewController(screen, animated: true)
+    }
+}
